@@ -31,13 +31,12 @@ const Home = () => {
       </div>
       {isChatbotVisible && (
         <div className={styles.chatbotContainer}>
-          <iframe
-            allow="microphone;"
-            width="350"
-            height="430"
-            src="https://console.dialogflow.com/api-client/demo/embedded/3ee31145-85e1-461b-8696-3cfad774acaf"
-            className={styles.chatbotIframe}
-          ></iframe>
+          <df-messenger
+            intent="WELCOME"
+            chat-title="zakaria-portfolio"
+            agent-id="3ee31145-85e1-461b-8696-3cfad774acaf"
+            language-code="en"
+          ></df-messenger>
         </div>
       )}
     </Layout>

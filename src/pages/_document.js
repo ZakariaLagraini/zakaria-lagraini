@@ -37,6 +37,10 @@ export default class MyDocument extends Document {
           />
           <link rel="icon" type="image/png" href={"/favicon.png"} />
           <title>Zakaria Lagraini</title>
+          <script
+            src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"
+            async
+          ></script>
         </Head>
 
         <body>
